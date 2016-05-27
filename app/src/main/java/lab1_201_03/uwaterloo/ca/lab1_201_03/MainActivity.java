@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private SensorManager sensorManager;
     private TextView lightView;
     private TextView magneticView;
+    private TextView maxMagneticView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,12 +36,10 @@ public class MainActivity extends AppCompatActivity {
 
         //Magnetic
         magneticSensor = sensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);
-        magneticView = new TextView(getApplicationContext());
+        magneticView = (TextView) findViewById(R.id.mfCurrent);
         SensorEventListener m = new MagneticFieldEventListener(magneticView);
         sensorManager.registerListener(m, magneticSensor,
                 SensorManager.SENSOR_DELAY_NORMAL);
-        linearLayout.addView(magneticView);
-
 
 
 

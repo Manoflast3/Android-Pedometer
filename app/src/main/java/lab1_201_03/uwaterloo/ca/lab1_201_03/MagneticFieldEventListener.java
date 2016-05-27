@@ -43,7 +43,9 @@ public class MagneticFieldEventListener implements SensorEventListener{
             if (Math.abs(z)>maxValues.get(2)){
                 maxValues.set(2, Math.abs(z));
             }
-            xyz = String.format("(%f, %f, %f) || Max: (%f, %f, %f)", x, y, z, maxValues.get(0), maxValues.get(1), maxValues.get(2));
+            xyz = String.format("(%f, %f, %f) \n" +
+                    "Max Value: " + "\n" +
+                    "(%f, %f, %f)", x, y, z, maxValues.get(0), maxValues.get(1), maxValues.get(2));
             output.setText(xyz);
         }
     }
