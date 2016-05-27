@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import ca.uwaterloo.sensortoy.LineGraphView;
 
 public class MainActivity extends AppCompatActivity {
     private Sensor lightSensor;
@@ -13,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
     private SensorManager sensorManager;
     private TextView lightView;
     private TextView magneticView;
-    private TextView maxMagneticView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
