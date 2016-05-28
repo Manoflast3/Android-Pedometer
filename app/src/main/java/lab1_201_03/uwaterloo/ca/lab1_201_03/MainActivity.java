@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private SensorManager sensorManager;
     private TextView lightView;
     private TextView magneticView;
-    private LineGraphView graph;
+    protected static LineGraphView graph;
 
 
     @Override
@@ -55,6 +55,5 @@ public class MainActivity extends AppCompatActivity {
 
 
         linearLayout.setOrientation(LinearLayout.VERTICAL);
-
     }
 }

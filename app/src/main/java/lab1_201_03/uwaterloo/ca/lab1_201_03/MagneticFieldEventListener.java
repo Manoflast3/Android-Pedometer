@@ -47,6 +47,7 @@ public class MagneticFieldEventListener implements SensorEventListener{
                     "Max Value: " + "\n" +
                     "(%f, %f, %f)", x, y, z, maxValues.get(0), maxValues.get(1), maxValues.get(2));
             output.setText(xyz);
+            MainActivity.graph.addPoint(se.values);
         }
     }
 }
