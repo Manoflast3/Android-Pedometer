@@ -51,28 +51,6 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Max Value: "
-            android:id="@+id/textView23"
-            android:layout_below="@+id/textView7"
-            android:layout_toLeftOf="@+id/textView5"
-            android:layout_toStartOf="@+id/textView5"
-            android:textColor="#000" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="(n/a, n/a, n/a)"
-            android:id="@+id/lightMax"
-            android:layout_below="@+id/mfMax"
-            android:layout_alignLeft="@+id/mfMax"
-            android:layout_alignStart="@+id/mfMax"
-            android:textColor="#565656" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Magnetic Field Sensor"
             android:id="@+id/textView6"

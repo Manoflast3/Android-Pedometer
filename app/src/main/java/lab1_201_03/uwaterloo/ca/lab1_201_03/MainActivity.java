@@ -4,8 +4,12 @@ import android.hardware.*;
 import android.hardware.SensorManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import java.util.Arrays;
+
 import ca.uwaterloo.sensortoy.LineGraphView;
 
 public class MainActivity extends AppCompatActivity {
@@ -14,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
     private SensorManager sensorManager;
     private TextView lightView;
     private TextView magneticView;
+    private LineGraphView graph;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,11 +34,10 @@ public class MainActivity extends AppCompatActivity {
 
         //Light
         lightSensor = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
-        lightView = new TextView(getApplicationContext());
+        lightView = (TextView) findViewById(R.id.lightCurrent);
         SensorEventListener l = new LightSensorEventListener(lightView);
         sensorManager.registerListener(l, lightSensor,
                 SensorManager.SENSOR_DELAY_NORMAL);
-        linearLayout.addView(lightView);
 
         //Magnetic
         magneticSensor = sensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);
@@ -41,6 +46,12 @@ public class MainActivity extends AppCompatActivity {
         sensorManager.registerListener(m, magneticSensor,
                 SensorManager.SENSOR_DELAY_NORMAL);
 
+        //Graph
+        graph = new LineGraphView(getApplicationContext(),
+                100,
+                Arrays.asList("x", "y", "z"));
+        linearLayout.addView(graph);
+        graph.setVisibility(View.VISIBLE);
 
 
         linearLayout.setOrientation(LinearLayout.VERTICAL);
