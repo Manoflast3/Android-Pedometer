@@ -1,4 +1,4 @@
-package lab1_201_03.ca.uwaterloo.lab1_201_03;
+package lab1_201_03.ca.uwaterloo.lab2_201_03;
 
 import android.content.Context;
 import android.graphics.Color;

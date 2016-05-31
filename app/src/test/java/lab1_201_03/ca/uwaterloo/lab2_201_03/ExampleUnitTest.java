@@ -1,4 +1,4 @@
-package lab0_sss_xx.uwaterloo.ca.lab0_201_03;
+package lab1_201_03.ca.uwaterloo.lab2_201_03;
 
 import org.junit.Test;
 

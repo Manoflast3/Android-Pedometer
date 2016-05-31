@@ -1,15 +1,12 @@
-package lab1_201_03.ca.uwaterloo.lab1_201_03;
+package lab1_201_03.ca.uwaterloo.lab2_201_03;
 
 import android.content.Context;
 import android.content.pm.ActivityInfo;
-import android.graphics.Color;
 import android.hardware.Sensor;
-import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutCompat;
 import android.view.View;
 import android.widget.*;
 
@@ -18,7 +15,7 @@ import java.util.Arrays;
 
 import ca.uwaterloo.sensortoy.LineGraphView;
 
-public class Lab1_201_03 extends AppCompatActivity {
+public class Lab2_201_03 extends AppCompatActivity {
     private SensorManager sensorManager;
     private Sensor lightSensor, accSensor, rotationVectorSensor, magneticFieldSensor;
     private LineGraphView graph;
