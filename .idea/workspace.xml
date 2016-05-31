@@ -5,24 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc201bed-32a9-4744-8c2c-e437117991fc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_3_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_23_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_23_3_0.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0/app/src/androidTest/java/lab1_201_03/ca/uwaterloo/lab1_201_03/ApplicationTest.java" afterPath="$PROJECT_DIR$/0/app/src/androidTest/java/lab1_201_03/ca/uwaterloo/lab1_201_03/ApplicationTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0/app/src/main/java/lab1_201_03/ca/uwaterloo/lab1_201_03/Lab1_201_03.java" afterPath="$PROJECT_DIR$/0/app/src/main/java/lab1_201_03/ca/uwaterloo/lab1_201_03/Lab1_201_03.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0/app/src/test/java/lab1_201_03/ca/uwaterloo/lab1_201_03/ExampleUnitTest.java" afterPath="$PROJECT_DIR$/0/app/src/test/java/lab1_201_03/ca/uwaterloo/lab1_201_03/ExampleUnitTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/androidTest/java/lab1_201_03/ca/uwaterloo/lab2_201_03/ApplicationTest.java" afterPath="$PROJECT_DIR$/app/src/androidTest/java/ca/uwaterloo/lab2_201_03/ApplicationTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/lab1_201_03/ca/uwaterloo/lab2_201_03/AccelerometerListener.java" afterPath="$PROJECT_DIR$/app/src/main/java/ca/uwaterloo/lab2_201_03/AccelerometerListener.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/lab1_201_03/ca/uwaterloo/lab2_201_03/Lab2_201_03.java" afterPath="$PROJECT_DIR$/app/src/main/java/ca/uwaterloo/lab2_201_03/Lab2_201_03.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/lab1_201_03/ca/uwaterloo/lab2_201_03/LightSensorListener.java" afterPath="$PROJECT_DIR$/app/src/main/java/ca/uwaterloo/lab2_201_03/LightSensorListener.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/lab1_201_03/ca/uwaterloo/lab2_201_03/LineGraphListener.java" afterPath="$PROJECT_DIR$/app/src/main/java/ca/uwaterloo/lab2_201_03/LineGraphListener.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/lab1_201_03/ca/uwaterloo/lab2_201_03/MagneticFieldListener.java" afterPath="$PROJECT_DIR$/app/src/main/java/ca/uwaterloo/lab2_201_03/MagneticFieldListener.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/lab1_201_03/ca/uwaterloo/lab2_201_03/RotationVectorListener.java" afterPath="$PROJECT_DIR$/app/src/main/java/ca/uwaterloo/lab2_201_03/RotationVectorListener.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/test/java/lab1_201_03/ca/uwaterloo/lab2_201_03/ExampleUnitTest.java" afterPath="$PROJECT_DIR$/app/src/test/java/ca/uwaterloo/lab2_201_03/ExampleUnitTest.java" />
     </list>
     <ignored path="Lab2_201_03.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1717,6 +1700,46 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lab2_201_03" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uwaterloo" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lab2_201_03" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uwaterloo" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lab2_201_03" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
