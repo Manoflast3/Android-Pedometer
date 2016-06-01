@@ -27,7 +27,7 @@ public class Lab2_201_03 extends AppCompatActivity{
     // File Stuff
     private File file;
     private String filename = "footstep_data.txt";
-    private String fullPath;
+    private String fullPath = Environment.getExternalStorageDirectory().getAbsolutePath();
     protected static PrintWriter printWriter;
 
     @Override
@@ -62,11 +62,6 @@ public class Lab2_201_03 extends AppCompatActivity{
 
         //Specifies File path
         try {
-            fullPath = Environment.getDataDirectory().getAbsolutePath() + "/AcceloData";
-            File dir = new File(fullPath);
-            if (!dir.exists()){
-                dir.mkdir();
-            }
             file = new File(fullPath, filename);
             file.createNewFile();
             printWriter = new PrintWriter(file);
