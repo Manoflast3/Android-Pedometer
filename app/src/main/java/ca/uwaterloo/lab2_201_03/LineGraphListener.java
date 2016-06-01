@@ -4,6 +4,8 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 
+import java.io.IOException;
+
 import ca.uwaterloo.sensortoy.LineGraphView;
 
 /**
@@ -41,9 +43,6 @@ class LineGraphListener implements SensorEventListener {
             y = accelerometerMax[1];
             z = accelerometerMax[2];
             String max = String.format("(%.2f, %.2f, %.2f)",x, y, z);
-            //set the textviews.
-
-
         }
     }
 }
