@@ -48,7 +48,7 @@ public class Lab2_201_03 extends AppCompatActivity{
 
 
         SensorEventListener accelerometer = new AccelerometerListener(AccelerometerSensor);
-        sensorManager.registerListener(accelerometer, accSensor,SensorManager.SENSOR_DELAY_NORMAL);
+        sensorManager.registerListener(accelerometer, accSensor,SensorManager.SENSOR_DELAY_FASTEST);
 
         LinearLayout linearLayout = (LinearLayout) findViewById(R.id.linear);
         graph = new LineGraphView(getApplicationContext(),
@@ -58,7 +58,7 @@ public class Lab2_201_03 extends AppCompatActivity{
         graph.setVisibility(View.VISIBLE);
 
         SensorEventListener lineGraph = new LineGraphListener(graph);
-        sensorManager.registerListener(lineGraph, accSensor,SensorManager.SENSOR_DELAY_NORMAL);
+        sensorManager.registerListener(lineGraph, accSensor,SensorManager.SENSOR_DELAY_FASTEST);
 
         //Specifies File path
         try {
