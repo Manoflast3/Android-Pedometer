@@ -25,10 +25,10 @@ public class Lab2_201_03 extends AppCompatActivity{
     private Sensor accSensor;
     private LineGraphView graph;
     // File Stuff
-    private File file;
     private String filename = "footstep_data.txt";
     private String fullPath = Environment.getExternalStorageDirectory().getAbsolutePath();
     protected static PrintWriter printWriter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,13 +42,13 @@ public class Lab2_201_03 extends AppCompatActivity{
 
         accSensor = sensorManager.getDefaultSensor(Sensor.TYPE_LINEAR_ACCELERATION);
 
-        TextView AccelerometerCurrent = (TextView)findViewById(R.id.accelerometerCurrent);
-        TextView AccelerometerMax = (TextView)findViewById(R.id.accelerometerMax);
-        TextView [] AccelerometerSensor = {AccelerometerCurrent, AccelerometerMax};
+        TextView AccelerometerCurrent = (TextView) findViewById(R.id.accelerometerCurrent);
+        TextView AccelerometerMax = (TextView) findViewById(R.id.accelerometerMax);
+        TextView[] AccelerometerSensor = {AccelerometerCurrent, AccelerometerMax};
 
 
         SensorEventListener accelerometer = new AccelerometerListener(AccelerometerSensor);
-        sensorManager.registerListener(accelerometer, accSensor,SensorManager.SENSOR_DELAY_FASTEST);
+        sensorManager.registerListener(accelerometer, accSensor, SensorManager.SENSOR_DELAY_FASTEST);
 
         LinearLayout linearLayout = (LinearLayout) findViewById(R.id.linear);
         graph = new LineGraphView(getApplicationContext(),
@@ -57,18 +57,21 @@ public class Lab2_201_03 extends AppCompatActivity{
         linearLayout.addView(graph);
         graph.setVisibility(View.VISIBLE);
 
-        SensorEventListener lineGraph = new LineGraphListener(graph);
-        sensorManager.registerListener(lineGraph, accSensor,SensorManager.SENSOR_DELAY_FASTEST);
-
-        //Specifies File path
+        /*File creation
         try {
-            file = new File(fullPath, filename);
-            file.createNewFile();
-            printWriter = new PrintWriter(file);
+            AccelerometerListener.file.createNewFile();
         }
         catch (IOException e){
             e.printStackTrace();
         }
+        */
+
+        /* Check status of Ext. dir.
+
+
+         */
+        SensorEventListener lineGraph = new LineGraphListener(graph);
+        sensorManager.registerListener(lineGraph, accSensor, SensorManager.SENSOR_DELAY_FASTEST);
 
     }
 
