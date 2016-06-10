@@ -12,6 +12,8 @@ import android.view.View;
 import android.widget.*;
 
 
+import org.w3c.dom.Text;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -38,16 +40,19 @@ public class Lab2_201_03 extends AppCompatActivity{
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
-
         accSensor = sensorManager.getDefaultSensor(Sensor.TYPE_LINEAR_ACCELERATION);
 
         TextView AccelerometerCurrent = (TextView)findViewById(R.id.accelerometerCurrent);
         TextView AccelerometerMax = (TextView)findViewById(R.id.accelerometerMax);
         TextView [] AccelerometerSensor = {AccelerometerCurrent, AccelerometerMax};
 
+        TextView stepCount = (TextView)findViewById(R.id.stepCount);
+        Button button = (Button) findViewById(R.id.start);
 
-        SensorEventListener accelerometer = new AccelerometerListener(AccelerometerSensor);
-        sensorManager.registerListener(accelerometer, accSensor,SensorManager.SENSOR_DELAY_FASTEST);
+        SensorEventListener counter = new StepCounter(stepCount, button);
+
+
+        sensorManager.registerListener(counter, accSensor,SensorManager.SENSOR_DELAY_FASTEST);
 
         LinearLayout linearLayout = (LinearLayout) findViewById(R.id.linear);
         graph = new LineGraphView(getApplicationContext(),
@@ -55,8 +60,6 @@ public class Lab2_201_03 extends AppCompatActivity{
                 Arrays.asList("x", "y", "z"));
         linearLayout.addView(graph);
         graph.setVisibility(View.VISIBLE);
-
-
 
         SensorEventListener lineGraph = new LineGraphListener(graph, AccelerometerSensor);
         sensorManager.registerListener(lineGraph, accSensor,SensorManager.SENSOR_DELAY_FASTEST);
