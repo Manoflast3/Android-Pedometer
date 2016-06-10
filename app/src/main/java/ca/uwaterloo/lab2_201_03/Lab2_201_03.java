@@ -12,7 +12,6 @@ import android.view.View;
 import android.widget.*;
 
 
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -33,7 +32,7 @@ public class Lab2_201_03 extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lab1_201_03);
+        setContentView(R.layout.activity_lab2_201_03);
 
         // Locks Screen Orientation
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -57,7 +56,9 @@ public class Lab2_201_03 extends AppCompatActivity{
         linearLayout.addView(graph);
         graph.setVisibility(View.VISIBLE);
 
-        SensorEventListener lineGraph = new LineGraphListener(graph);
+
+
+        SensorEventListener lineGraph = new LineGraphListener(graph, AccelerometerSensor);
         sensorManager.registerListener(lineGraph, accSensor,SensorManager.SENSOR_DELAY_FASTEST);
 
         //Specifies File path
