@@ -24,7 +24,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b19f085-f83d-4e9d-b8a4-ee08d9d9883a" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/ca/uwaterloo/lab2_201_03/AccelerometerListener.java" afterPath="$PROJECT_DIR$/app/src/main/java/ca/uwaterloo/lab2_201_03/StepCounter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
@@ -45,6 +44,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ca/uwaterloo/lab2_201_03/Lab2_201_03.java" afterPath="$PROJECT_DIR$/app/src/main/java/ca/uwaterloo/lab2_201_03/Lab2_201_03.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ca/uwaterloo/lab2_201_03/LineGraphListener.java" afterPath="$PROJECT_DIR$/app/src/main/java/ca/uwaterloo/lab2_201_03/LineGraphListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ca/uwaterloo/lab2_201_03/StepCounter.java" afterPath="$PROJECT_DIR$/app/src/main/java/ca/uwaterloo/lab2_201_03/StepCounter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_lab2_201_03.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_lab2_201_03.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab2.iml" afterPath="$PROJECT_DIR$/lab2.iml" />
     </list>
     <ignored path="lab2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,17 +71,15 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/ca/uwaterloo/lab2_201_03/StepCounter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.11557789">
-              <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+              <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#830#949#0" expanded="true" />
                 <element signature="e#948#949#0" expanded="true" />
                 <element signature="e#1246#1247#0" expanded="true" />
                 <element signature="e#1275#1276#0" expanded="true" />
-                <element signature="e#1642#1811#0" expanded="true" />
-                <element signature="e#1810#1811#0" expanded="true" />
-                <element signature="e#1896#2066#0" expanded="true" />
-                <element signature="e#2065#2066#0" expanded="true" />
+                <element signature="e#1507#1676#0" expanded="true" />
+                <element signature="e#1675#1676#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2175,10 +2175,8 @@
             <element signature="e#948#949#0" expanded="true" />
             <element signature="e#1246#1247#0" expanded="true" />
             <element signature="e#1275#1276#0" expanded="true" />
-            <element signature="e#1642#1811#0" expanded="true" />
-            <element signature="e#1810#1811#0" expanded="true" />
-            <element signature="e#1896#2066#0" expanded="true" />
-            <element signature="e#2065#2066#0" expanded="true" />
+            <element signature="e#1507#1676#0" expanded="true" />
+            <element signature="e#1675#1676#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2220,10 +2218,8 @@
             <element signature="e#948#949#0" expanded="true" />
             <element signature="e#1246#1247#0" expanded="true" />
             <element signature="e#1275#1276#0" expanded="true" />
-            <element signature="e#1642#1811#0" expanded="true" />
-            <element signature="e#1810#1811#0" expanded="true" />
-            <element signature="e#1896#2066#0" expanded="true" />
-            <element signature="e#2065#2066#0" expanded="true" />
+            <element signature="e#1507#1676#0" expanded="true" />
+            <element signature="e#1675#1676#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2265,10 +2261,8 @@
             <element signature="e#948#949#0" expanded="true" />
             <element signature="e#1246#1247#0" expanded="true" />
             <element signature="e#1275#1276#0" expanded="true" />
-            <element signature="e#1642#1811#0" expanded="true" />
-            <element signature="e#1810#1811#0" expanded="true" />
-            <element signature="e#1896#2066#0" expanded="true" />
-            <element signature="e#2065#2066#0" expanded="true" />
+            <element signature="e#1507#1676#0" expanded="true" />
+            <element signature="e#1675#1676#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2300,13 +2294,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_lab2_201_03.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.225807">
-          <caret line="157" column="45" selection-start-line="157" selection-start-column="45" selection-end-line="157" selection-end-column="45" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ca/uwaterloo/lab2_201_03/Lab2_201_03.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -2319,10 +2310,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ca/uwaterloo/lab2_201_03/Lab2_201_03.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_lab2_201_03.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.225807">
+          <caret line="157" column="45" selection-start-line="157" selection-start-column="45" selection-end-line="157" selection-end-column="45" />
           <folding />
         </state>
       </provider>
@@ -2330,17 +2324,15 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/ca/uwaterloo/lab2_201_03/StepCounter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.11557789">
-          <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+          <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#830#949#0" expanded="true" />
             <element signature="e#948#949#0" expanded="true" />
             <element signature="e#1246#1247#0" expanded="true" />
             <element signature="e#1275#1276#0" expanded="true" />
-            <element signature="e#1642#1811#0" expanded="true" />
-            <element signature="e#1810#1811#0" expanded="true" />
-            <element signature="e#1896#2066#0" expanded="true" />
-            <element signature="e#2065#2066#0" expanded="true" />
+            <element signature="e#1507#1676#0" expanded="true" />
+            <element signature="e#1675#1676#0" expanded="true" />
           </folding>
         </state>
       </provider>

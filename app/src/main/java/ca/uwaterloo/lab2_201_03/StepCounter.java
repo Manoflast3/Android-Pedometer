@@ -40,19 +40,14 @@ class StepCounter implements SensorEventListener {
     }
 
     private boolean state1 = false, state2 = false, state3 = false;
-    private long delay = 50;
+    private long delay = 40;
     private boolean period = false;
 
 
     public void enableCounter(){
         period = true;
     }
-    public void refreshCounter(){
-        state1 = false;
-        state2 = false;
-        state3 = false;
-        period = false;
-    }
+
 
     public void onSensorChanged(SensorEvent se) {
         if(!state1){
@@ -66,14 +61,7 @@ class StepCounter implements SensorEventListener {
                         enableCounter();
                     }
                 }, delay);
-                Timer timer2 = new Timer();
-                timer.schedule(new TimerTask() {
 
-                    @Override
-                    public void run() {
-                        refreshCounter();
-                    }
-                }, 1000);
 
             }
         }else if(period){
